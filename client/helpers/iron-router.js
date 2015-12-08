@@ -20,3 +20,5 @@ Router.route('/posts/:_id', function () {
     Session.set('currentPostId', this.params._id);
     this.render('postPage');
 })
+
+Router.route('/bs');
