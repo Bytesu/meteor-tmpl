@@ -15,10 +15,18 @@ Router.route('/', function () {
         //data: function () { return Items.findOne({_id: this.params._id}); }
     });
 });
-Router.route('/posts/:_id', function () {
-    console.log(this.params._id)
-    Session.set('currentPostId', this.params._id);
-    this.render('postPage');
+Router.route('/posts/:_id', {
+    template:'postPage',
+    onBeforeAction:function(){
+        console.log(this.params._id);
+        this.next();
+    }
 })
 
+// Router.route('/posts/:_id', {
+//     template:'postPage',
+//     onBeforeAction:function(){
+//         console.log(this.params._id);
+//     }
+// })
 Router.route('/bs');
