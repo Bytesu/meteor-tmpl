@@ -10,10 +10,11 @@ Router.onBeforeAction(function() {
     this.next();
 });
 
-Router.route('/', function () {
-    this.render('postsList', {
-        //data: function () { return Items.findOne({_id: this.params._id}); }
-    });
+Router.route('/', {
+    template:'postsList',
+    onBeforeAction:function(){
+        this.next();
+    }
 });
 Router.route('/posts/:_id', {
     template:'postPage',

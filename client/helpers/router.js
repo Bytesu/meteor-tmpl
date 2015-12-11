@@ -4,3 +4,4 @@
 //Meteor.Router.add({
 //    '/':'postsList'
 //})
+

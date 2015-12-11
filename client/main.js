@@ -3,7 +3,7 @@
  */
 if(Meteor.isClient){
 	Meteor.startup(function(){
-		Tacker.autorun(function(){
+		Tracker.autorun(function(){
 			Meteor.subscribe('posts');
 		})
 	})
