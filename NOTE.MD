@@ -1,4 +1,4 @@
-discover meteor 学习笔记
+simple-note 学习笔记
 1. 由于真实环境不需要在client端为所有数据做mirror，因此移除autopublish,改为publish 和 subscription 来实现，增加代码控制强度: meteor remove autopuhlish
 
 
