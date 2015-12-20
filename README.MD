@@ -1,3 +1,5 @@
+meteor 模版
+
 Get请求：
 
 curl -XGET "http://localhost:3000/posts/getAll?s=2#3"
