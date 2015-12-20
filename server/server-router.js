@@ -1,7 +1,6 @@
 /**
  * Created by s_ on 15/11/22.
  */
-
 Router.after(function(req,res){
     // Iron.Router.bodyParser
     // console.log(req.params)
@@ -58,7 +57,7 @@ Router.route('/posts/:id', { where: 'server' })
         this.response.write(('------'))
 
         this.response.end();
-        
+
 
     })
     .put(function () {
